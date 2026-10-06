@@ -70,7 +70,7 @@ def load_config():
         try:
             with open(CONFIG_FILE, "r") as f:
                 data = json.load(f)
-                if "required_channel_id" in data and data["required_channel_id"]:
+                if "required_channel_id" in data and data["https://t.me/nothingram78"]:
                     data["required_channels"] = [{
                         "id": data["required_channel_id"],
                         "title": data.get("required_channel_title") or "Required Channel",
@@ -1032,5 +1032,5 @@ def handle_callbacks(call):
         )
         bot.answer_callback_query(call.id)
 
-print("⚡️ DEV X HOST is online and waiting...")
+print("⚡️ Ram X hosting is online and waiting...")
 bot.infinity_polling()
